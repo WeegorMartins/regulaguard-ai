@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regulaguard-ai"
+version = "0.1.0"
+description = "Regulatory intelligence platform powered by generative AI"
+requires-python = ">=3.11"
+dependencies = [
+    "google-genai>=2.0,<3.0",
+    "pydantic>=2.0,<3.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
